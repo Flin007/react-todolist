@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import s from './app.module.css';
+import Task from "./components/task/Task";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className={s.App}>
+            <h1>todos</h1>
+            <div className={s.mainContainer}>
+                <div className={s.header}>
+                    <input type="text" placeholder='What needs to be done?'/>
+                </div>
+                <div className={s.body}>
+                    <Task />
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;
