@@ -1,0 +1,20 @@
+.createTaskContainer {
+    display: flex;
+}
+
+.createTaskContainer button {
+    margin-left: 10px;
+    outline: unset;
+    font-weight: 300;
+    padding: 5px 20px;
+    color: var(--lightPurple);
+    background-color: var(--white);
+    border: 1px solid var(--silver);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.createTaskContainer button:hover{
+    color: var(--purple);
+    background-color: var(--silver);
+}
